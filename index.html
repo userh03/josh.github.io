@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>    
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">  
+            <div id="navbar-example" class="container-fluid">
+                <ul class="nav nav-tabs" role="tablist">                                                 
+                    <li class="nav-item" >
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#aboutMe">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Contacts</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portforlio">Portfolio</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li> 
+                </ul>
+            </dev>      
+        </nav>  
+    </header>
+    <section id="home">
+        <h1>HOME</h1>
+        <div class="motd">
+            <div class="avatarPhoto">
+                <img src="assets/img/avatar.jpg">
+                <p class="name"><i><strong><span class="hname">Hello! </span>I'm Joshua</i></strong></p>
+                <div class="aborder"></div>
+                <div class="container">
+                    <h1>A <span class="auto-type"></span></h1>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    var typed = new Typed(".auto-type",{
+                        strings: ["Web Developer", "Programmer", "Gamer"],
+                        typeSpeed: 170,
+                        backSpeed: 170,
+                        loop: true
+                    })
+                </script>
+                <div class="icons-logos">
+                    <hr class="hr1">
+                        <div class="icons">         
+                            <a href="https://www.facebook.com/mission0903/" target="_blank"><i class="bi-facebook"></i></a>
+                            <a href="#"><i class="bi-linkedin"></i></a>
+                            <a href="#"><i class="bi-skype"></i></a>      
+                        </div>
+                    <hr class="hr2">
+                </div> 
+            </div>   
+        </div>   
+    </section>
+    <section id="aboutMe">
+        <h1>ABOUT ME</h1>
+        <div class="aboutContainer">
+            <img src="assets/img/avatar2.jpg">
+            <p>
+                My name is <i>Joshua Miguel J. Mission</i>, I am currently in 4th Year College taking Information Technology course in CvSU CCAT CAMPUS.
+            <br><br>I have a 1 month of experience being a Tech Support in LEENtech Network Solutions<br><br>
+                I am the first born in my siblings and my family's expectation in me is so high. 
+            </p>
+        </div>
+    </section>
+    <section id="contacts">
+        <h1>CONTACTS</h1>
+        <div class="ContactContent">
+            <div class="form">
+                <h1 class="cont">GET IN TOUCH</h1>
+                <input type="text" class="name" placeholder="Enter your name" required>
+                <input type="email" class="email" placeholder="Enter your email address" required>
+                <textarea class="message" rows="10" placeholder="Enter your message"></textarea>
+                <button type="submit">Submit</button>
+            </div>
+            <div class="Social">
+                <h3>Email</h3>
+                <h4>joshuamiguel.mission@cvsu.edu.ph</h4>
+                <h3>Phone Number</h3>
+                <h4>09093582123</h4>
+                <h3>Address</h3>
+                <h4>Rosario, Cavite</h4>
+                <h3>Social Account</h3>
+                <h4><div class="icons2">         
+                    <a href="https://www.facebook.com/mission0903/" target="_blank"><i class="bi-facebook"></i></a>
+                    <a href="test" target="_blank"><i class="bi-skype"></i></a>      
+                </div></h4>
+            </div>
+        </div>
+    <script type="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "username",
+                Password : "password",
+                To : 'them@website.com',
+                From : "you@isp.com",
+                Subject : "This is the subject",
+                Body : "And this is the body"
+            }).then(
+              message => alert(message)
+            );
+        }
+    </script>
+    </section>
+    <section id="portforlio">
+        <h1>PORTFOLIO</h1>
+        <div class="portMakes">
+            <div class="portlinks">
+               <a class="shown" href="https://userh03.github.io" target="_blank"><img class="portimg" src="assets/img/portMake1.JPG"></a>
+               <div class="hide">Sweet Message for my girl<33</div>
+            </div>        
+        </div>
+    </section>
+    <section id="resume">
+        <h1>RESUME</h1>
+        <div class="resumeContainer">
+            <iframe src="https://docs.google.com/document/d/1hl-jscddM7rqHjfO8buKgNQ7hhhW6VPM/edit?usp=sharing&ouid=110957989262255357987&rtpof=true&sd=true&embedded=true" width="100%" height="500px"></iframe>
+        </div>
+    </section>
+</body>
+</html>
